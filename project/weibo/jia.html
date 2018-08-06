@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/begin.css">
+    <link rel="stylesheet" href="../css/end.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        @keyframes move {
+            0%{
+                width:0px;background-color:crimson ;
+            }
+            30%{
+                width:18px;background-color: orangered;
+            }
+            80%{
+                width: 48px;background-color:green ;
+            }
+            100%{
+                width: 60px;background-color:green ;
+            }
+        }
+
+        #touxiang{
+            height: 200px;
+            width: 100%;
+            font-weight:700 ;
+            position: absolute;
+            top:400px;
+        }
+
+        #touxiang1{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content:space-around ;
+            align-items: center;
+            font-size: 10px;
+            text-align: center;
+            color:rgb(51,51,51);
+
+        } #touxiang2{
+              height: 100px;
+              width: 100%;
+              display: flex;
+              justify-content:space-around ;
+              align-items: center;
+              font-size: 10px;
+              text-align: center;
+              color:rgb(51,51,51);
+          }
+        #touxianga-1{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-1-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/电影.svg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-1-2{
+            height:30px;
+            width:80px;
+        }
+        #touxianga-2{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-2-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/头条.svg);
+            background-size: 105%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-2-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxianga-3{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-3-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/签到.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        #touxianga-3-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxianga-4{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-4-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../点评.svg);
+            background-size: contain;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-4-2{
+            height:30px;
+            width: 80px;
+        }
+
+
+
+        #touxiang-1{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-1-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../文字.svg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-1-2{
+            height:30px;
+            width:80px;
+        }
+        #touxiang-2{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-2-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/拍摄.svg);
+            background-size: 120%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-2-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxiang-3{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-3-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/相册1.svg);
+            background-size: 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        #touxiang-3-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxiang-4{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-4-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/直播1.svg);
+            background-size: 110%;
+            background-position:center ;
+            background-repeat: no-repeat;
+        }
+        #touxiang-4-2{
+            height:30px;
+            width: 80px;
+        }
+
+
+        #date{
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: 70px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        #date-left{
+            height: 130px;
+            width: 30%;
+            margin-left: 30px;
+
+        }
+        #date-left-1{
+            height:50%;
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+        }
+        #date-left-1-1{
+            height:100%;
+            width: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 50px;
+            color: rgb(147,147,147);
+            font-weight: 600;
+        }
+        #date-left-1-2{
+            height:100%;
+            width: 50%;
+            text-align: center;
+            line-height: 30px;
+            color: rgb(147,147,147);
+        }
+        #date-left-2{
+            height:50%;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            color: rgb(147,147,147);
+        }
+        /*#date-left-3{*/
+            /*height: 50%;*/
+            /*width: 100%;*/
+        /*}*/
+        #date-right{
+            height: 150px;
+            width: 40%;
+            background-image: url(../img/手机.png);
+            background-position: bottom;
+            background-size: 80%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container border"style="background-color: rgb(243,243,243)">
+    <!--begin start-->
+    <div class="begin ">
+        <div class="begin-left ">
+            <div class="begin-left-border">
+                <div class="begin-left-border-1">中国联通</div>
+                <div class="begin-left-border-1">中国联通</div>
+            </div>
+        </div>
+        <div class="begin-right ">
+            <div id="begin-right-3">
+                <div class="lose" > </div>
+                <div class="lose"> </div>
+                <div class="ok"> </div>
+                <div class="ok"> </div>
+            </div>
+            <div id="begin-right-4">
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="ok"></div>
+            </div>
+            <div class="begin-right-2">
+                <div class="battery">
+                    <div class="battery-body c" ></div>
+                </div>
+                <div class="battery-header"></div>
+
+            </div>
+        </div><div class="begin-right-1">
+        晚上8:59
+    </div>
+    </div>
+<div id="date">
+    <div id="date-left">
+        <div id="date-left-1">
+            <div id="date-left-1-1">
+                04
+            </div>
+            <div id="date-left-1-2">星期六08/2018</div>
+        </div>
+        <div id="date-left-2">太原:晴33℃ &gt;</div>
+
+        <div id="date-left-3"></div>
+    </div>
+    <div id="date-right"></div>
+</div>
+
+    <div id="touxiang">
+        <div id="touxiang1">
+            <div id="touxiang-1">
+                <div id="touxiang-1-1"></div>
+                <div id="touxiang-1-2">文字</div>
+            </div>
+            <div id="touxiang-2">
+                <div id="touxiang-2-1"></div>
+                <div id="touxiang-2-2">拍摄</div>
+            </div>
+            <div id="touxiang-3">
+                <div id="touxiang-3-1"></div>
+                <div id="touxiang-3-2">相册</div>
+            </div>
+            <div id="touxiang-4">
+                <div id="touxiang-4-1"></div>
+                <div id="touxiang-4-2">直播</div>
+            </div>
+        </div>
+        <div id="touxiang2">
+            <div id="touxianga-1">
+                <div id="touxianga-1-1"></div>
+                <div id="touxianga-1-2">光影秀</div>
+            </div>
+            <div id="touxianga-2">
+                <div id="touxianga-2-1"></div>
+                <div id="touxianga-2-2">头条文章</div>
+            </div>
+            <div id="touxianga-3">
+                <div id="touxianga-3-1"></div>
+                <div id="touxianga-3-2">签到</div>
+            </div>
+            <div id="touxianga-4">
+                <div id="touxianga-4-1"></div>
+                <div id="touxianga-4-2">点评</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="end ">
+        <div id="end">
+            <div id="end-1"onclick="window.location.href='weibo.html'">
+                <div id="end-1-1"></div>
+                <div id="end-1-2"><p>首页</p></div>
+            </div></a>
+            <div id="end-2"onclick="window.location.href='1.html'">
+                <div id="end-2-1">
+                    <div id="xiaoxi">
+                        <div id="6"style="transform: scale(.7);color: whitesmoke;text-align: center">6</div>
+                    </div>
+                </div>
+                <div id="end-2-2"><p>消息</p></div>
+            </div>
+
+            <div id="end-3"onclick="window.location.href='jia.html'">
+
+                <div id="end-3-1">
+                    <div id="end-3-2"></div>
+                </div>
+            </div>
+            <div id="end-4" onclick="window.location.href='2.html'">
+                <div id="end-4-1"></div>
+                <div id="end-4-2"><p>发现</p></div>
+            </div>
+            <div id="end-5" onclick="window.location.href='3.html'">
+                <div id="end-5-1" ></div>
+                <div id="end-5-2"><p>我</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../JS/js/jquery/jquery.js"></script>
+<script src="../JS/js/router.js"></script>
+<script src="../JS/js/index.js"></script>

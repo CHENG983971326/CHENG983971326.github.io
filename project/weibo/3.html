@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/begin.css">
+    <link rel="stylesheet" href="../css/end.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        @keyframes move {
+            0%{
+                width:0px;background-color:crimson ;
+            }
+            30%{
+                width:18px;background-color: orangered;
+            }
+            80%{
+                width: 48px;background-color:green ;
+            }
+            100%{
+                width: 60px;background-color:green ;
+            }
+        }
+        #header{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(250,250,250);
+            color: #313131;
+            font-size: 16px;
+            font-family: "微软雅黑 Light";
+            font-weight: 700;
+        }
+        #header-1{
+            height: 40px;
+            width:20%;
+            line-height:50px ;
+
+            text-align: left;
+            padding-left: 18px;
+
+        }
+        #header-2{
+            height: 40px;
+            width: 30%;
+            line-height: 50px;
+            text-align: center;
+        }
+        #header-3{
+            height: 40px;
+            width: 20%;
+            line-height: 50px;
+            text-align:center ;
+
+        }
+   #person{
+    height: 150px;
+    width: 100%;
+
+}
+        #person1{
+            height:80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #text-1{
+            height: 70px;
+            width:70px;
+            background-image: url(../img/头像啊.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            margin-left: 15px;
+            border-radius: 50%;
+
+        }
+
+        #text-2{
+            height: 70px;
+            flex: 1;
+            font-size: 16px;
+            padding-left: 15px;
+            color: #313131;
+            line-height: 70;
+            font-weight: 700;
+        }
+        #text-2 div{
+            height: 38px;
+            width: 100%;
+            text-align: left;
+            line-height: 48px;
+            font-family: "微软雅黑 Light";
+            color: rgb(51,51,51);
+        }
+        #text-3{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #text-3-1{
+            height: 30px;
+            width: 30%;
+            background-image: url(../img/VV.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #text-3-2{
+            height: 30px;
+            width: 70%;
+            text-align: center;
+            color: rgb(255,130,1);
+            font-family: 微软雅黑;
+            font-weight: 600;
+            line-height: 29px;
+        }
+        #person2{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-family: "微软雅黑 Light";
+            /*border-bottom: none;*/
+        }
+        #person2-1{
+            height: 70px;
+            width: 33.3%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: #313131;
+            flex-flow: column;
+        }
+        #person2-2{
+            height: 70px;
+            width: 33.3%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: #313131;
+            flex-flow: column;
+        }
+        #person2-3{
+            height: 70px;
+            width: 33.3%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: #313131;
+            flex-flow: column;
+            font-family: "微软雅黑 Light";
+        }
+
+        #person2-1-1{
+            height:20px;
+            width: 40px;
+            font-size: 20px;
+        text-align: center;
+        color: rgb(51,51,51);
+            font-weight:700 ;
+        }
+        #person2-1-2{
+            height:20px;
+            width: 40px;
+            color: rgb(147,147,147);
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #person2-2-1{
+            height:20px;
+            width: 40px;
+            font-size: 16px;
+            text-align: center;
+            font-weight:700 ;
+            color: rgb(51,51,51);
+        }
+        #person2-2-2{
+            height:20px;
+            width: 40px;
+            color: rgb(147,147,147);
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #person2-3-1{
+            height:20px;
+            width: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(51,51,51);
+            font-weight:700 ;
+        }
+        #person2-3-2{
+            height: 20px;
+            width: 40px;
+            color: rgb(147,147,147);
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+
+        }
+        #touxiang{
+            height: 200px;
+            width: 100%;
+            font-weight:700 ;
+        }
+
+        #touxiang1{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content:space-around ;
+            align-items: center;
+            font-size: 10px;
+            text-align: center;
+            color:rgb(51,51,51);
+
+        } #touxiang2{
+              height: 100px;
+              width: 100%;
+              display: flex;
+              justify-content:space-around ;
+              align-items: center;
+              font-size: 10px;
+              text-align: center;
+                      color:rgb(51,51,51);
+          }
+        #touxianga-1{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-1-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/钱包.svg);
+            background-size: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-1-2{
+            height:30px;
+            width:80px;
+        }
+        #touxianga-2{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-2-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/鞋子.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-2-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxianga-3{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-3-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/气球.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        #touxianga-3-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxianga-4{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-4-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/客服.svg);
+            background-size: contain;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-4-2{
+            height:30px;
+            width: 80px;
+        }
+
+
+
+        #touxiang-1{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-1-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/相册.svg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-1-2{
+            height:30px;
+            width:80px;
+        }
+        #touxiang-2{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-2-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../故事.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-2-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxiang-3{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-3-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/赞.svg);
+            background-size: 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        #touxiang-3-2{
+            height:30px;
+            width: 80px;
+        }
+        #touxiang-4{
+            height: 90px;
+            width: 25%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-4-1{
+            height:50px;
+            width: 40px;
+            background-image: url(../img/故事1.svg);
+            background-size: 110%;
+            background-position:center ;
+            background-repeat: no-repeat;
+        }
+        #touxiang-4-2{
+            height:30px;
+            width: 80px;
+        }
+        #red{
+            height: 280px;
+            width: 100%;
+            /*background-color: #313131;*/
+        }
+        #red1{
+            height: 40px;
+            width: 100%;
+            text-align: left;
+            line-height: 38px;
+            font-family: 微软雅黑;
+            color: rgb(147,147,147);
+            padding-left: 15px;
+        }
+        #red2{
+            height: 40px;
+            width: 100%;
+            line-height: 38px;
+            font-family: "微软雅黑;
+            color: rgb(51,51,51);
+            padding-left: 15px;
+        }
+        #red3{
+            height:150px;
+            width: 100%;
+            background-image: url(../img/签到.png);
+            background-size: 95%;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+        #red4{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(247,247,247);
+            text-align: center;
+            color: rgb(86,123,165);
+            line-height: 50px;
+        }
+        #red5{
+            height:150px;
+            width: 100%;
+            background-image: url(../img/签到1.png);
+            background-size: 95%;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+        #section{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+            border-bottom-color: rgb(147,147,147);
+            color: rgb(51,51,51);
+            font-weight: 600;
+        }
+
+
+        #section-1{
+            height: 60px;
+            width:70px;
+            background-image: url(../img/草稿箱.svg);
+            background-position:center;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            margin-left: 0px;
+
+
+        }
+        #section2-1{
+            height: 60px;
+            width:70px;
+            background-image: url(../img/免流量服务.svg);
+            background-position: center;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+        #section-2{
+            height: 60px;
+            flex: 1;
+            font-size: 16px;
+            color: #313131;
+            line-height: 60px;
+            margin-top: 5px;
+
+        }
+
+        #section-3{
+            width: 75px;
+            height: 60px;
+            margin-top: 4px;
+        }
+        #kong{
+            height: 10px;
+            width: 100%;
+            background-color: rgb(238,238,238);
+        }
+        #total{
+            width: 100%;
+            flex: 1;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="container border">
+    <!--begin start-->
+    <div class="begin ">
+        <div class="begin-left ">
+            <div class="begin-left-border">
+                <div class="begin-left-border-1">中国联通</div>
+                <div class="begin-left-border-1">中国联通</div>
+            </div>
+        </div>
+        <div class="begin-right ">
+            <div id="begin-right-3">
+                <div class="lose" > </div>
+                <div class="lose"> </div>
+                <div class="ok"> </div>
+                <div class="ok"> </div>
+            </div>
+            <div id="begin-right-4">
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="ok"></div>
+            </div>
+            <div class="begin-right-2">
+                <div class="battery">
+                    <div class="battery-body c" ></div>
+                </div>
+                <div class="battery-header"></div>
+
+            </div>
+        </div><div class="begin-right-1">
+        晚上8:59
+    </div>
+    </div>
+    <!--begin end-->
+    <!--header start-->
+    <div id="header">
+        <div id="header-1">添加好友</div>
+        <div id="header-2">我</div>
+        <div id="header-3">设置</div>
+        </div>
+<div id="total">
+    <div id="kong"></div>
+    <div id="person">
+        <div id="person1">
+            <div id="text-1"></div>
+            <div id="text-2">
+                <div >中了大乐透吃比巴卜</div>
+                <div style="font-size: 10px;color: rgb(147,147,147)"> 你的男孩 AKA </div>
+            </div>
+            <div id="text-3">
+                <div id="text-3-1"></div>
+                <div id="text-3-2">会员&gt;</div>
+            </div>
+        </div>
+        <div id="person2">
+            <div id="person2-1">
+                <div id="person2-1-1">65</div>
+                <div id="person2-1-2">微博</div>
+            </div>
+            <div id="person2-2">
+                <div id="person2-2-1">14</div>
+                <div id="person2-2-2">关注</div>
+            </div>
+            <div id="person2-3">
+                <div id="person2-3-1">2964</div>
+                <div id="person2-3-2">粉丝</div>
+            </div>
+        </div>
+    </div>
+    <div id="kong"></div>
+<div id="touxiang">
+    <div id="touxiang1">
+    <div id="touxiang-1">
+        <div id="touxiang-1-1"></div>
+        <div id="touxiang-1-2">我的相册</div>
+    </div>
+    <div id="touxiang-2">
+    <div id="touxiang-2-1"></div>
+    <div id="touxiang-2-2">我的故事</div>
+    </div>
+        <div id="touxiang-3">
+        <div id="touxiang-3-1"></div>
+        <div id="touxiang-3-2">我的赞</div>
+        </div>
+        <div id="touxiang-4">
+        <div id="touxiang-4-1"></div>
+        <div id="touxiang-4-2">粉丝服务</div>
+        </div>
+    </div>
+    <div id="touxiang2">
+        <div id="touxianga-1">
+            <div id="touxianga-1-1"></div>
+            <div id="touxianga-1-2">微博钱包</div>
+        </div>
+        <div id="touxianga-2">
+            <div id="touxianga-2-1"></div>
+            <div id="touxianga-2-2">微博运动</div>
+        </div>
+        <div id="touxianga-3">
+            <div id="touxianga-3-1"></div>
+            <div id="touxianga-3-2">粉丝头条</div>
+        </div>
+        <div id="touxianga-4">
+            <div id="touxianga-4-1"></div>
+            <div id="touxianga-4-2">客服中心</div>
+        </div>
+    </div>
+
+
+</div>
+   <div id="kong"></div>
+    <div id="red">
+        <div id="red1">签到领红包</div>
+        <div id="red2">今天你领红包了吗</div>
+        <div id="red3"></div>
+        <div id="red4">立即领取</div>
+    </div>
+    <div id="kong"></div>
+    <div id="red">
+        <div id="red1">欢乐竞猜</div>
+        <div id="red2">你有一份金豆待领取</div>
+        <div id="red5"></div>
+        <div id="red4">立即领取</div>
+    </div>
+    <div id="kong"></div>
+    <div id="section">
+        <div id="section2-1"></div>
+        <div id="section-2">
+           免流量
+
+        </div>
+        <div id="section-3"></div>
+    </div>
+    <div id="section">
+        <div id="section-1"></div>
+        <div id="section-2">
+
+            <div>草稿箱</div>
+        </div>
+        <div id="section-3"></div>
+    </div>
+    <div id="section">
+        <div id="section2-1"></div>
+
+        <div id="section-2">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="section-3"></div>
+    </div>
+    <div id="kong"></div>
+
+
+    <!--search end-->
+    <!--text start-->
+
+
+    <!--text end-->
+    <div class="end ">
+        <div id="end">
+            <div id="end-1"onclick="window.location.href='weibo.html'">
+                <div id="end-1-1"></div>
+                <div id="end-1-2"><p>首页</p></div>
+            </div></a>
+            <div id="end-2"onclick="window.location.href='1.html'">
+                <div id="end-2-1">
+                    <div id="xiaoxi">
+                        <div id="6"style="transform: scale(.7);color: whitesmoke;text-align: center">6</div>
+                    </div>
+                </div>
+                <div id="end-2-2"><p>消息</p></div>
+            </div>
+
+            <div id="end-3"onclick="window.location.href='jia.html'">
+
+                <div id="end-3-1">
+                    <div id="end-3-2"></div>
+                </div>
+            </div>
+            <div id="end-4" onclick="window.location.href='2.html'">
+                <div id="end-4-1"></div>
+                <div id="end-4-2"><p>发现</p></div>
+            </div>
+            <div id="end-5" onclick="window.location.href='3.html'">
+                <div id="end-5-1" ></div>
+                <div id="end-5-2"><p>我</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+  <!--引入脚本-->
+<script src="../JS/js/jquery/jquery.js"></script>
+<script src="../JS/js/router.js"></script>
+<script src="../JS/js/index.js"></script>

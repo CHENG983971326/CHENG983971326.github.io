@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/begin.css">
+    <link rel="stylesheet" href="../css/end.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        @keyframes move {
+            0%{
+                width:0px;background-color:crimson ;
+            }
+            30%{
+                width:18px;background-color: orangered;
+            }
+            80%{
+                width: 48px;background-color:green ;
+            }
+            100%{
+                width: 60px;background-color:green ;
+            }
+        }
+
+
+.header{
+    height: 50px;
+    width: 100%;
+ background-color: rgb(250,250,250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    height:62px;
+    width: 100%;
+    background-color:rgb(250,250,250 );
+    /*position: relative;*/
+}
+#title-total{
+    height: 70px;
+    width:100%;
+    background-color:rgb(250,250,250);
+    overflow-x: scroll;
+    display: flex;
+    flex-flow: column  wrap;
+    justify-content: space-between;
+   white-space: nowrap;
+    /*position: relative;*/
+    border-bottom: gray;
+}
+#title-total div{
+    height: 60px;
+    width:90px;
+    background-color: whitesmoke;
+    font-family: 微软雅黑;
+
+
+}
+       #jia{
+           height: 60px;
+           width: 60px;
+           background-image: url(../img/加号.svg);
+           background-size: 60%;
+           background-position: center;
+           position: absolute;
+           background-color: rgb(245,245,245);
+           background-repeat: no-repeat;
+           top: 90px;
+           right: 0px;
+           border:none;
+           border-left: 1px solid rgb(230,230,230);
+       }
+
+ .text{
+   flex: 1;
+    width: 100%;
+    background-color: whitesmoke;
+     overflow-y: scroll;
+}
+.text div{
+    height: 600px;
+    width: 100%;
+
+}
+
+
+#header-left{
+    height:80px ;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-left-1{
+    height:80px ;
+    width: 100px;
+    position: relative;
+}
+#header-left-s{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/拍照.png);
+    margin: 10px 0px 0px 0px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+
+        #header-left-2{
+            height:80px ;
+           width: 50%;
+           color: grey;
+            line-height: 80px;
+            font-family: 新宋体;
+            font-size: 22px;
+           text-align: right;
+            padding-right: 10px;
+        }
+        #header-right{
+            height:80px ;
+            width: 50%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+        }
+        #header-right-1{
+            height:80px ;
+            flex: 1;
+            color: black;
+            text-align:  center;
+            line-height: 80px;
+            font-family: 新宋体;
+            font-size: 22px;
+
+        }
+        #header-right-2{
+            height:80px ;
+            width: 50%;
+            /*background-image: url(扫码.png);*/
+            /*margin-right: 10px;*/
+            /*background-size: 40%;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: right center;*/
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+
+        }
+        #header-right-saoma{
+            height:80px ;
+            width: 60px;
+           position: relative;
+        }
+
+        #header-right-m{
+           width: 50px;
+            background-image: url(../img/扫码.png);
+            height: 50px;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: right center;
+            position: absolute;
+            right: 0px;
+            top: 12px;
+        }
+        #header-right-red{
+            height:80px ;
+            width: 80%;
+            /*background-image: url(红包.png);*/
+            /*margin-right: -7px;*/
+            /*background-size: 85%;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: right center;*/
+            display: flex;
+            flex-flow: row;
+            justify-content: right;
+            align-items: center;
+            position: relative;
+        }
+        #header-right-s{
+            height: 60px;
+            width: 50px;
+            position: absolute;
+           right: 0px;
+            top: 5px;
+            background-image: url(../rich.png);
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: right center;
+
+        }
+
+
+#total{
+
+}
+#all{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#all-top{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#top1{
+    height: 100px;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    height: 70px;
+    width: 70px;
+    background-image:url(../img/新华.jpg) ;
+    background-size: contain;
+    border-radius: 50%;
+    position: relative;
+}
+#img-v{
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/V.svg);
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 47px;
+    left: 45px;
+}
+#top2{
+    height: 100px;
+    width: 60%;
+
+}
+#top2-1{
+    height: 50px;
+    width:300px ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#name{
+height: 50px;
+    width: 100px;
+}
+#weibo{
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/微博.jpg);
+    background-size: 70%;
+    background-position:left;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 6px;
+}
+#top2-2{
+    height: 50px;
+    width:300px ;
+   text-align: left;
+   line-height: 50px;
+    color: grey;
+}
+#top3{
+    height: 100px;
+    width: 23%;
+    position: relative;
+}
+#top3-1{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:20px;
+    top: 25px;
+    border: 1px solid rgb(244,98,0);
+}
+#top3-1-guanzhu{
+    height: 40px;
+    width: 80px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:20px;
+    top: 23px;
+    border: 1px solid rgb(138,138,138);
+    text-align: center;
+background-color: grey;
+
+    display: none;
+}
+
+        #hei{
+            height: 40px;
+            width: 80px;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+
+            text-align: center;
+        }
+        #top3-1-yiguanzhu {
+            background-image: url(../img/对勾.svg);
+            height:30px;
+            width: 30px;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+
+        }
+#top3-2 {
+    background-image: url(../加号.svg);
+    height: 40px;
+    width: 40px;
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#top3-3{
+    height: 40px;
+    width: 40px;
+}
+
+#all-center{
+    height: 400px;
+    width: 100%;
+    /*border-bottom: rgb(250,250,250);*/
+}
+#all-center-1{
+    height: 200px;
+    width: 100%;
+}
+#all-center-2{
+    height: 200px;
+    width: 100%;
+    background-image:url(../img/最新消息.jpg) ;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#shidian1{
+    height: 200px;
+    width: 100%;
+    background-image:url(../img/shidian1.jpg) ;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#beyond{
+    height: 200px;
+    width: 100%;
+    background-image:url(../img/beyond.jpg) ;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+ #all-bottom{   height: 70px;
+        width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid gainsboro;
+     border-bottom: none;
+        }
+#all-bottom-1{
+    height: 95px;
+    width: 33.3%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #313131;
+
+}
+        #all-bottom-2{
+            height: 95px;
+            width: 33.3%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: #313131;
+        }
+        #all-di{
+            height: 20px;
+            width: 100%;
+            background-color:rgb(238,238,238) ;
+        }
+#all-zhuanfa{
+    height:40px ;
+    width:40px;
+    background-image:url(../img/转发.svg) ;
+    background-size: 70%;
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+#all-pinglun{
+    height:40px ;
+    width:40px;
+    background-image:url(../img/评论.svg) ;
+    background-size: 70%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+        #all-bottom-3{
+            height: 95px;
+            width: 33.3%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: #313131;
+        }
+#all-dianzan{
+    height:40px ;
+    width:40px;
+    background-image:url(../img/点赞.svg) ;
+    background-size: 70%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#xiaoxi {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 130px;
+    top: -4px;
+}
+        /*#6{*/
+            /*height: 10px;*/
+            /*width: 10px;*/
+            /*position: absolute;*/
+            /*top: 60px;*/
+            /*left:28px;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<div class="container ">
+    <!--begin start-->
+    <div class="begin ">
+        <div class="begin-left ">
+            <div class="begin-left-border">
+                <div class="begin-left-border-1">中国联通</div>
+                <div class="begin-left-border-1">中国联通</div>
+            </div>
+        </div>
+        <div class="begin-right ">
+            <div id="begin-right-3">
+                <div class="lose" > </div>
+                <div class="lose"> </div>
+                <div class="ok"> </div>
+                <div class="ok"> </div>
+            </div>
+            <div id="begin-right-4">
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="ok"></div>
+            </div>
+            <div class="begin-right-2">
+                <div class="battery">
+                <div class="battery-body c" ></div>
+                </div>
+                <div class="battery-header"></div>
+
+            </div>
+            </div><div class="begin-right-1">
+           晚上8:59
+        </div>
+        </div>
+    <!--begin end-->
+   <!--header start-->
+    <div class="header ">
+        <div id="header-left">
+            <div id="header-left-1">
+                <div id="header-left-s"></div>
+            </div>
+            <div id="header-left-2"class="" >
+                <div id="header-left-g"style="text-align: center;color: rgb(147,147,147);font-weight: 600">关注</div>
+            </div>
+        </div>
+        <div id="header-right" >
+            <div id="header-right-1"class="">
+                <div> <b style="border-bottom: 1px solid crimson;padding-bottom: 8px;color: rgb(50,50,50);">热门</b></div>
+            </div>
+            <div id="header-right-2" >
+                <div id="header-right-red">
+                    <div id="header-right-s"></div>
+                </div>
+                <div id="header-right-saoma">
+                    <div id="header-right-m"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <!--title start-->
+    <div class="title ">
+        <div id="title-total">
+        <div style="text-align: center;line-height: 60px;color:rgb(255,130,2);font-weight: 700;font-size: 18px">推荐</div>
+        <div  style="text-align: center;line-height: 60px">附近</div>
+        <div  style="text-align: center;line-height: 60px">榜单</div>
+        <div  style="text-align: center;line-height: 60px">明星</div>
+        <div  style="text-align: center;line-height: 60px">搞笑</div>
+        <div  style="text-align: center;line-height: 60px" >情感</div>
+        <div style="text-align: center;line-height: 60px">时代</div>
+        <div style="text-align: center;line-height: 60px">社会</div>
+        <div style="text-align: center;line-height: 60px">太原</div>
+        <div style="text-align: center;line-height: 60px">电影</div>
+        <div style="text-align: center;line-height: 60px">游戏</div>
+
+        </div>
+    </div>
+    <div id="jia"class="border"></div>
+    <!--title end-->
+
+    <!--text start-->
+    <div class="text ">
+<div id="all">
+    <div id="all-top">
+        <div id="top1" >
+            <div id="img">
+                <div id="img-v"></div>
+            </div>
+        </div>
+        <div id="top2" >
+            <div id="top2-1">
+              <div id="name"style="text-align: center;line-height: 65px;font-size: 21px;font-family:微软雅黑;color: rgb(244,98,0)">新华视点</div>
+                <div id="weibo"></div>
+            </div>
+            <div id="top2-2">&nbsp;&nbsp;07-31 &nbsp;&nbsp;19:29&nbsp;&nbsp;来自&nbsp;微博&nbsp;weibo...</div>
+
+        </div>
+        <div id="top3" >
+            <div id="top3-1-guanzhu">
+                <div id="top3-1-yiguanzhu"></div>
+                <div id="hei">已关注</div>
+            </div>
+            <div id="top3-1"style="border: 1px solid orange">
+                <div id="top3-2"></div>
+                <div id="top3-3"style="color: rgb(244,98,0);font-family: 宋体;line-height: 40px;font-size: 7px";>关注</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="all-center">
+        <div id="all-center-1"style="color: #313131;">
+            <b style="color: cornflowerblue">#领航中国# &nbsp;</b>
+            【习近平在中共中央政治局第七次集体学习时强调  坚定决心意志增强工作合力  坚决做好全面停止军队有偿服务工作】
+            新华社北京7月31日电中共中央政治局7月31日下午就全面停止军队有偿服务举行第七次集体学习。中共中央总书记习近平在
+            主持学习时强调，全面停止军队有偿服务，是党中央和中央军委着眼于强军兴军作出的重大决策，是深化国防和军队改革的
+            重要内容。要坚定决心意志，加强创新突破，坚持积极稳妥，增强工作合力，不开口...<b style="color: cornflowerblue">全文</b>
+
+
+        <div id="all-center-2"></div>
+            <hr>
+    </div></div>
+    <div id="all-bottom">
+    <div id="all-bottom-1">
+        <div id="all-zhuanfa"></div></div>
+
+    <div id="all-bottom-2">
+        <div id="all-pinglun"></div>
+    </div>
+    <div id="all-bottom-3">
+        <div id="all-dianzan"></div>
+    </div>
+</div>
+
+    </div>
+        <div id="all-di"></div>
+
+        <div id="all">
+            <div id="all-top">
+                <div id="top1" >
+                    <div id="img">
+                        <div id="img-v"></div>
+                    </div>
+                </div>
+                <div id="top2" >
+                    <div id="top2-1">
+                        <div id="name"style="text-align: center;line-height: 65px;font-size: 21px;font-family:微软雅黑;color: rgb(244,98,0)">新华视点</div>
+                        <div id="weibo"></div>
+                    </div>
+                    <div id="top2-2">&nbsp;&nbsp;8-1 &nbsp;&nbsp;10:25&nbsp;&nbsp;来自&nbsp;vivoX5&nbsp;maxV</div>
+
+                </div>
+                <div id="top3" >
+                    <div id="top3-1-guanzhu"class="border">
+                        <div id="top3-1-yiguanzhu"></div>
+                        <div id="hei">已关注</div>
+                    </div>
+                    <div id="top3-1"style="border: 1px solid orange">
+                        <div id="top3-2"></div>
+                        <div id="top3-3"style="color: rgb(244,98,0);font-family: 宋体;line-height: 40px;font-size: 7px";>关注</div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="all-center">
+                <div id="all-center-1"style="color: #313131;">
+                    <b style="color: cornflowerblue">#人生微语#&nbsp;</b>
+                    做一个认真发现生活点点滴滴的人，工作之余把平凡的日子过得精彩。请把努力当成一种习惯，而不是三分钟热度。每一个你羡慕的收获，都是努力拼搏而来的。早安！天下大事必作于细。踏踏实实把一件件细小的工作落实，持之以恒，终会实现心中的目标。请你们一定要记得，你们人生中有比追星更重要的事情，所以请把你们的时间用在你们自己的生活中好不好。我会在我这个年纪，把我经历的东西、我的感受尽量放在角色中 ​​​​ <b style="color: cornflowerblue">全文</b>
+
+
+                    <div id="shidian1"></div>
+                    <hr>
+                </div></div>
+            <div id="all-bottom"class="border">
+                <div id="all-bottom-1">
+                    <div id="all-zhuanfa"></div></div>
+
+                <div id="all-bottom-2">
+                    <div id="all-pinglun"></div>
+                </div>
+                <div id="all-bottom-3">
+                    <div id="all-dianzan"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="all-di"></div>
+        <div id="all">
+            <div id="all-top">
+                <div id="top1" >
+                    <div id="img">
+                        <div id="img-v"></div>
+                    </div>
+                </div>
+                <div id="top2" >
+                    <div id="top2-1">
+                        <div id="name"style="text-align: center;line-height: 65px;font-size: 21px;font-family:微软雅黑;color: rgb(244,98,0)">新华视点</div>
+                        <div id="weibo"></div>
+                    </div>
+                    <div id="top2-2">&nbsp;&nbsp;08-2 18:18&nbsp;&nbsp;来自&nbsp;iphone&nbsp;X</div>
+
+                </div>
+                <div id="top3" >
+                    <div id="top3-1-guanzhu">
+                        <div id="top3-1-yiguanzhu"></div>
+                         <div id="hei">已关注</div>
+                    </div>
+                    <div id="top3-1"style="border: 1px solid orange">
+                        <div id="top3-2"></div>
+                        <div id="top3-3"style="color: rgb(244,98,0);font-family: 宋体;line-height: 40px;font-size: 7px";>关注</div>
+                    </div>
+                </div>
+            </div>
+            <div id="all-center">
+                <div id="all-center-1"style="color: #313131;">
+                    <b style="color: cornflowerblue">#正能量# &nbsp;</b>
+                    【所有的苦，以后都会笑着说出来】
+                    二十几岁的你，应该明白，没有什么捷径能让你出类拔萃，没有哪些艰难困苦是白白煎熬。
+                    你的每一份经历，不管是顺境还是坎坷，都会增加你生命的厚度。
+                    世界很小，请带着梦想一起奔跑；世界很大，请带着坚持努力成长。
+                    18个提升自己的建议↓↓从今天起，为自己而活。早善良要有底线，大方要有原则。不分青红皂白，只知道对人好，那会辜负自己的一片好心 ​ ... <b style="color: cornflowerblue">全文</b>
+
+
+                    <div id="beyond"></div>
+                    <hr>
+                </div></div>
+            <div id="all-bottom">
+                <div id="all-bottom-1">
+                    <div id="all-zhuanfa"></div></div>
+
+                <div id="all-bottom-2">
+                    <div id="all-pinglun"></div>
+                </div>
+                <div id="all-bottom-3">
+                    <div id="all-dianzan"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="all-di"></div>
+    </div>
+    <div class="end ">
+        <div id="end">
+            <div id="end-1"onclick="window.location.href='weibo.html'">
+                <div id="end-1-1"></div>
+                <div id="end-1-2"><p>首页</p></div>
+            </div></a>
+            <div id="end-2"onclick="window.location.href='1.html'">
+                <div id="end-2-1">
+                    <div id="xiaoxi">
+                        <div id="6"style="transform: scale(.7);color: whitesmoke;text-align: center">6</div>
+                    </div>
+                </div>
+                <div id="end-2-2"><p>消息</p></div>
+            </div>
+
+            <div id="end-3"onclick="window.location.href='jia.html'">
+
+                <div id="end-3-1">
+                    <div id="end-3-2"></div>
+                </div>
+            </div>
+            <div id="end-4" onclick="window.location.href='2.html'">
+                <div id="end-4-1"></div>
+                <div id="end-4-2"><p>发现</p></div>
+            </div>
+            <div id="end-5" onclick="window.location.href='3.html'">
+                <div id="end-5-1" ></div>
+                <div id="end-5-2"><p>我</p></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="../JS/js/jquery/jquery.js"></script>
+<script src="../JS/js/router.js"></script>
+<script src="../JS/js/index.js"></script>

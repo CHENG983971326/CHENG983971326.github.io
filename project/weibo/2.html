@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/begin.css">
+    <link rel="stylesheet" href="../css/end.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        @keyframes move {
+            0%{
+                width:0px;background-color:crimson ;
+            }
+            30%{
+                width:18px;background-color: orangered;
+            }
+            80%{
+                width: 48px;background-color:green ;
+            }
+            100%{
+                width: 60px;background-color:green ;
+            }
+        }
+
+        #touxiang1{
+              height: 100px;
+              width: 100%;
+              display: flex;
+              justify-content:space-around ;
+              align-items: center;
+              font-size: 16px;
+              text-align: center;
+          } #touxiang2{
+                height: 100px;
+                width: 100%;
+                display: flex;
+                justify-content:space-around ;
+                align-items: center;
+                font-size: 16px;
+                text-align: center;
+            }
+        #touxianga-1{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #touxianga-1-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/故事.svg);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-1-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxianga-2{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-2-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/赛事.svg);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxianga-2-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxianga-3{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-3-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/财经.svg);
+            background-size: 95%;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+        }
+        #touxianga-3-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxianga-4{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-4-1{
+            height:30px;
+            width: 40px;
+            background-image: url(../img/购物.svg);
+            background-size: 80%;
+            background-position:bottom ;
+            background-repeat: no-repeat;
+        }
+        #touxianga-4-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxianga-5{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxianga-5-1{
+            height:30px;
+            width: 40px;
+            background-image: url(../img/更多.svg);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+        #touxianga-5-2{
+            height:20px;
+            width: 40px;
+            text-align: center;
+        }
+
+
+
+        #touxiang-1{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #touxiang-1-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/找人.svg);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-1-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxiang-2{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-2-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/城市.svg);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-2-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxiang-3{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-3-1{
+            height:40px;
+            width: 40px;
+            background-image: url(../img/游戏.svg);
+            background-size: 80%;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+        }
+        #touxiang-3-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxiang-4{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-4-1{
+            height:30px;
+            width: 40px;
+            background-image: url(../img/直播.svg);
+            background-size: 80%;
+            background-position:bottom ;
+            background-repeat: no-repeat;
+        }
+        #touxiang-4-2{
+            height:20px;
+            width: 40px;
+        }
+        #touxiang-5{
+            height: 60px;
+            width: 20%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #touxiang-5-1{
+            height:30px;
+            width: 40px;
+            background-image: url(../img/电影.svg);
+            background-size: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #touxiang-5-2{
+            height:20px;
+            width: 40px;
+            text-align: center;
+        }
+
+
+
+        #search {
+            height: 60px;
+            width: 100%;
+            background-color:gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #lunbo{
+            height: 150px;
+            width: 100%;
+            background-image: url(../img/百里守约.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+        #touxiang{
+            height: 200px;
+            width: 100%;
+            font-family: 微软雅黑;
+            color: #313131;
+        }
+        #huati{
+        height:150px;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            font-family: 微软雅黑;
+            font-size: 19px;
+            font-weight: 400;
+        }
+        #shipin{
+            flex: 1;
+            width: 100%;
+            overflow: scroll;
+        }
+
+        #sousuo{
+            height: 40px;
+            width: 94%;
+            background-color: whitesmoke;
+            border-radius: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+        }
+
+        #fangda{
+            height:30px ;
+            width: 30px ;
+            margin-right: -2px;
+            background-image: url(../img/发现.svg);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: .7;
+            margin-left: 20px;
+        }
+        #sou{
+            height: 30px;
+            width: 90%;
+            text-align: center;
+            color:grey;
+            line-height: 30px;
+        }
+#huati1{
+    height:75px ;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+#huati1-1{
+    height:75px ;
+    width: 50%;
+display: flex;
+    justify-content: space-around;
+}
+        #huati1-1-1{
+            height:75px ;
+            width: 20%;
+            background-image: url(../img/政务.jpg);
+            background-position: center;
+            background-size:110% ;
+            background-repeat: no-repeat;
+        }
+        #huati1-1-2{
+            height:75px ;
+            width: 70%;
+            line-height: 75px;
+        }
+        #huati1-2{
+       height:75px ;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }  #huati1-2-1{
+               height:75px ;
+               width: 20%;
+               background-image: url(../img/c.jpg);
+               background-position: right;
+               background-size:90% ;
+               background-repeat: no-repeat;
+           }
+        #huati1-2-2{
+            height:75px ;
+            width: 70%;
+            line-height: 75px;
+        }
+        #huati2{
+       height:75px ;
+       width: 100%;
+       display: flex;
+       flex-flow: row;
+   }
+        #huati2-1{
+         height:75px ;
+         width: 50%;
+            display: flex;
+            justify-content: space-around;
+     }
+        #huati2-1-1{
+            height:75px ;
+            width: 20%;
+            background-image: url(../img/VS.jpg);
+            background-position: center;
+            background-size:100% ;
+            background-repeat: no-repeat;
+        }
+        #huati2-1-2{
+            height:75px ;
+            width: 70%;
+            line-height: 75px;
+        }
+
+        #huati2-2{
+            height:75px ;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #huati2-2-1{
+            height:75px ;
+            width: 20%;
+            background-image: url(../img/超话.jpg);
+            background-position: left;
+            background-size:100% ;
+            background-repeat: no-repeat;
+        }
+        #huati2-2-2{
+            height:75px ;
+            width: 70%;
+            line-height: 75px;
+        }
+
+#hui{
+    height: 15px;
+    width: 100%;
+    /*background-color: grey;*/
+}
+#shipin{
+    flex:1 ;
+    width: 100%;
+    /*display: flex;*/
+    /*!*flex-flow: column;*!*/
+    /*justify-content:space-between ;*/
+    overflow: scroll;
+}
+#shipin1{
+    height: 50px;
+    width: 100%;
+display: flex;
+    flex-flow: row nowrap;
+    font-family: "微软雅黑";
+
+    /*justify-content: left;*/
+}
+      #juyoujing{
+          height:400px;
+          width: 100%;
+          background-size: cover;
+          background-image: url(../img/橘右京.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+        #gongbenwuzang{
+            height:400px;
+            width: 100%;
+            background-size: cover;
+            background-image: url(../img/宫本武藏.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #shipin3{
+      height:50px ;
+      width: 100%;
+      color: grey;
+            font-family: 微软雅黑;
+            font-size: 20px;
+            text-align: left;
+            line-height: 50px;
+            /*background-color: #FFA500;*/
+  }
+#shipin4{
+    height:100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    /*background-color: #313131;*/
+}
+#shipin4-1{
+    height: 80px;
+    width: 20%;
+    /*background-color: #9c27b0;*/
+    background-image: url(../img/新浪微博.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+#shipin4-2{
+    height: 80px;
+    width: 40%;
+    /*background-color: #FFD700;*/
+    text-align: left;
+    line-height: 80px;
+    color: grey;
+    font-size: 20px;
+    font-family: "微软雅黑 Light";
+}
+        #shipin4-3{
+            height: 80px;
+            width: 10%;
+        background-image: url(../img/消息1.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+        #shipin4-4{
+            height: 80px;
+            width: 10%;
+            background-image: url(../img/分享.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+        #shipin4-5{
+            height: 80px;
+            width: 10%;
+            background-image: url(../img/点赞.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+        }
+        #shipin4-6{
+            height: 80px;
+            width: 10%;
+            text-align: left;
+            color: grey;
+            font-size: 20px;
+            font-family: "微软雅黑 Light";
+            line-height: 80px;
+        }
+#shipin1 div{
+    height: 50px;
+    width: 14%;
+    text-align: center;
+    line-height: 50px;
+    color: #313131;
+}
+
+
+
+    </style>
+</head>
+<body>
+<div class="container border"style="overflow: scroll">
+    <!--begin start-->
+    <div class="begin ">
+        <div class="begin-left ">
+            <div class="begin-left-border">
+                <div class="begin-left-border-1">中国联通</div>
+                <div class="begin-left-border-1">中国联通</div>
+            </div>
+        </div>
+        <div class="begin-right ">
+            <div id="begin-right-3">
+                <div class="lose" > </div>
+                <div class="lose"> </div>
+                <div class="ok"> </div>
+                <div class="ok"> </div>
+            </div>
+            <div id="begin-right-4">
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="ok"></div>
+            </div>
+            <div class="begin-right-2">
+                <div class="battery">
+                    <div class="battery-body c" ></div>
+                </div>
+                <div class="battery-header"></div>
+
+            </div>
+        </div><div class="begin-right-1">
+        晚上8:59
+    </div>
+    </div>
+    <!--begin end-->
+
+    <!--search start-->
+    <div id="search">
+        <div id="sousuo">
+            <div id="fangda"></div>
+            <div id="sou">大家正在搜：大学城图书馆谢绝儿童入内</div>
+        </div>
+    </div>
+    <div id="lunbo"></div>
+<div id="touxiang">
+      <div id="touxiang1">
+        <div id="touxiang-1">
+            <div id="touxiang-1-1"></div>
+            <div id="touxiang-1-2">找人</div>
+        </div>
+        <div id="touxiang-2">
+            <div id="touxiang-2-1"></div>
+            <div id="touxiang-2-2">天津</div>
+        </div>
+        <div id="touxiang-3">
+
+            <div id="touxiang-3-1">
+            </div> <div id="touxiang-3-2">游戏</div>
+        </div>
+        <div id="touxiang-4">
+            <div id="touxiang-4-1"></div>
+            <div id="touxiang-4-2">直播</div>
+        </div>
+        <div id="touxiang-5">
+            <div id="touxiang-5-1"></div>
+            <div id="touxiang-5-2">电影</div>
+        </div></div>
+    <div id="touxiang2">
+        <div id="touxianga-1">
+            <div id="touxianga-1-1"></div>
+            <div id="touxianga-1-2">尤物</div>
+        </div>
+        <div id="touxianga-2">
+            <div id="touxianga-2-1"></div>
+            <div id="touxianga-2-2">赛事</div>
+        </div>
+        <div id="touxianga-3">
+
+            <div id="touxianga-3-1">
+
+            </div><div id="touxianga-3-2">财经</div>
+        </div>
+        <div id="touxianga-4">
+            <div id="touxianga-4-1"></div>
+            <div id="touxianga-4-2">购物</div>
+        </div>
+        <div id="touxianga-5">
+            <div id="touxianga-5-1"></div>
+            <div id="touxianga-5-2">更多</div>
+        </div>
+    </div>
+</div>
+    <div id="huati">
+        <div id="huati1">
+            <div id="huati1-1">
+                <div id="huati1-1-1"></div>
+                <div id="huati1-1-2">#政务V影响力</div>
+            </div>
+            <div id="huati1-2">
+                <div id="huati1-2-1"></div>
+                <div id="huati1-2-2">#蔡徐坤生日</div>
+            </div>
+        </div>
+        <div id="huati2">
+            <div id="huati2-1">
+                <div id="huati2-1-1"></div>
+                <div id="huati2-1-2">#亚洲新歌榜#</div>
+            </div>
+            <div id="huati2-2">
+                <div id="huati2-2-1"></div>
+                <div id="huati2-2-2">#超话题社</div>
+            </div>
+        </div>
+    </div>
+    <div id="hui"></div>
+    <div id="shipin">
+        <div id="shipin1">
+            <div ></div>
+            <div ><b style="border-bottom: 1px solid orangered ;padding-bottom:5px">视频</b></div>
+            <div >故事</div>
+            <div >头条</div>
+            <div >榜单</div>
+            <div >天津</div>
+            <div ></div>
+        </div>
+        <div id="juyoujing" ></div>
+        <div id="shipin3" >橘右京是一名以技能攻击为主的战士!</div>
+        <div id="shipin4">
+        <div id="shipin4-1"></div>
+            <div id="shipin4-2">新浪微博</div>
+            <div id="shipin4-3"></div>
+            <div id="shipin4-4"></div>
+            <div id="shipin4-5"></div>
+            <div id="shipin4-6">75</div>
+        </div>
+        <div id="gongbenwuzang"></div>
+        <div id="shipin3" >宫本武藏是一个无蓝的战士型英雄。</div>
+        <div id="shipin4" >
+            <div id="shipin4-1"></div>
+            <div id="shipin4-2">新浪微博</div>
+            <div id="shipin4-3"></div>
+            <div id="shipin4-4"></div>
+            <div id="shipin4-5"></div>
+            <div id="shipin4-6">110</div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!--<div></div>-->
+    <!--<div></div>-->
+<!--</div>-->
+
+<!--</div>-->
+    <!--search end-->
+    <!--text start-->
+
+
+    <div class="end ">
+        <div id="end">
+            <div id="end-1"onclick="window.location.href='weibo.html'">
+                <div id="end-1-1"></div>
+                <div id="end-1-2"><p>首页</p></div>
+            </div></a>
+            <div id="end-2"onclick="window.location.href='1.html'">
+                <div id="end-2-1">
+                    <div id="xiaoxi">
+                        <div id="6"style="transform: scale(.7);color: whitesmoke;text-align: center">6</div>
+                    </div>
+                </div>
+                <div id="end-2-2"><p>消息</p></div>
+            </div>
+
+            <div id="end-3"onclick="window.location.href='jia.html'">
+
+                <div id="end-3-1">
+                    <div id="end-3-2"></div>
+                </div>
+            </div>
+            <div id="end-4" onclick="window.location.href='2.html'">
+                <div id="end-4-1"></div>
+                <div id="end-4-2"><p>发现</p></div>
+            </div>
+            <div id="end-5" onclick="window.location.href='3.html'">
+                <div id="end-5-1" ></div>
+                <div id="end-5-2"><p>我</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../JS/js/jquery/jquery.js"></script>
+<script src="../JS/js/router.js"></script>
+<script src="../JS/js/index.js"></script>

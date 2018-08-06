@@ -1,0 +1,126 @@
+.end {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(250,250,250);
+    position: absolute;
+    bottom: 0px;
+}
+#end{
+    height: 60px;
+    width:100% ;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+#end-1{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#end-1-1{
+    height:40px;
+    width: 40px;
+    background-image: url(../img/首页-选中.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-1-2{
+    height:20px;
+    width: 40px;
+    text-align: center;
+    line-height: 20px;
+}
+#end-2{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#end-2-1{
+    height:40px;
+    width: 40px;
+    background-image: url(../img/消息.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-2-2{
+    height:20px;
+    width: 40px;
+    text-align: center;
+    line-height: 14px;
+}
+#end-3{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#end-3-1{
+
+    background-color:rgb(255,130,1);
+
+}
+#end-3-2{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/加号白.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-4{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#end-4-1{
+    height:30px;
+    width: 40px;
+    background-image: url(../img/发现.svg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-4-2{
+    height:20px;
+    width: 40px;
+    text-align: center;
+    line-height: 25px;
+}
+#end-5{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#end-5-1{
+    height:30px;
+    width: 40px;
+    background-image: url(../img/我.svg);
+    background-size: 86%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-5-2{
+    height:20px;
+    width: 40px;
+    text-align: center;
+    line-height: 25px;
+}

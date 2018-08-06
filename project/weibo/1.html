@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/begin.css">
+    <link rel="stylesheet" href="../css/end.css">
+    <style>
+
+        @keyframes move {
+            0%{
+                width:0px;background-color:crimson ;
+            }
+            30%{
+                width:18px;background-color: orangered;
+            }
+            80%{
+                width: 48px;background-color:green ;
+            }
+            100%{
+                width: 60px;background-color:green ;
+            }
+        }
+
+#header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-1{
+    height: 50px;
+    width: 25%;
+   line-height: 50px;
+    color: #313131;
+
+    font-family: 微软雅黑;
+    padding-left: 30px;
+
+}
+#header-2{
+    height: 50px;
+    width: 25%;
+    line-height: 50px;
+    text-align: center;
+    color: #313131;
+color: darkgrey;
+    font-family: 微软雅黑;
+}
+#header-3{
+    height: 50px;
+    width: 25%;
+    line-height: 50px;
+    text-align: center;
+    color: #313131;
+
+    font-family: 微软雅黑;
+}
+#header-4{
+    height: 50px;
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+#pinglun{
+    height:30px;
+    width:40px ;
+    position: absolute;
+    right: 10px;
+    background-image: url(../img/消息1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+#sanjiao{
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 0px;
+    transform: rotate(38deg);
+    position: absolute;
+    top: 22px;
+    left: 36px;
+}
+#search {
+    height: 60px;
+    width: 100%;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sousuo{
+    height: 40px;
+    width: 94%;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+#fangda{
+    height:30px ;
+    width: 30px ;
+   margin-right: -2px;
+    background-image: url(../img/发现.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .5;
+    margin-left: 5px;
+}
+#sou{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    color:darkgrey;
+    line-height: 30px;
+}
+#text{
+    flex: 1;
+    width:100%;
+
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    overflow-y: scroll;
+    /*background-color: whitesmoke;*/
+}
+
+ .ceng {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+     display: flex;
+
+     align-items: center;
+     /*text-align: center;*/
+
+}
+#text-1{
+    height: 80px;
+    width:80px;
+background-image: url(../img/通知-艾特我的.svg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+
+
+}
+
+#text-2{
+    height: 80px;
+    flex: 1;
+    font-family: 微软雅黑;
+    font-size: 21px;
+    padding-left: 15px;
+    color: #313131;
+line-height: 80px
+
+}
+        #xinwen{
+            height: 80px;
+            flex: 1;
+            font-family: 微软雅黑;
+            font-size: 21px;
+            padding-left: 5px;
+            color: #313131;
+            line-height: 80px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #new{
+            height: 40px;
+            font-size: 21px;
+            padding-left: 10px;
+            color: #313131;
+
+        }
+        #new2{
+            height: 40px;
+            font-size: 21px;
+            padding-left: 10px;
+            color: #313131;
+        }
+        #text-3{
+            height: 80px;
+            width:30px;
+
+        }
+        #text4{
+            height: 80px;
+            width:50px;
+
+        }
+        #pinglun1{
+            height: 80px;
+            width:80px;
+            background-image: url(../img/评论我的.svg);
+            background-position: center;
+            background-size: 85%;
+            background-repeat: no-repeat;
+        }
+        #zan{
+            height: 80px;
+            width:80px;
+            background-image: url(../img/赞我的.svg);
+            background-position: center;
+            background-size: 86%;
+            background-repeat: no-repeat;
+        }
+      #email{
+          height: 80px;
+          width:80px;
+          /*background-image: url(新浪邮箱.svg);*/
+          /*background-position: center;*/
+          /*background-size: 70%;*/
+          /*background-repeat: no-repeat;*/ display: flex;justify-content: center;align-items: center;
+        }
+      #quan{
+          height: 60px;
+          width:60px;
+          border-radius: 50%;
+          background-image: url(../img/新浪邮箱.svg);
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-color: whitesmoke;
+
+      }
+        #quan1{
+            height: 60px;
+            width:60px;
+            border-radius: 50%;
+            background-image: url(../img/新浪微博.svg);
+            background-position: center;
+            background-size: 99%;
+            background-repeat: no-repeat;
+            background-color: whitesmoke;
+
+        }
+
+        #xinlang{
+            height: 80px;
+            width:80px;
+            /*background-image: url(新浪微博.svg);*/
+            /*background-position: center;*/
+            /*background-size: 70%;*/
+            /*background-repeat: no-repeat;*/
+            display: flex;justify-content: center;align-items: center;
+        }
+        #pay{
+            height: 80px;
+            width:80px;
+            background-image: url(../img/新浪支付.svg);
+            background-position: center;
+            background-size: 90%;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container border">
+    <!--begin start-->
+    <div class="begin ">
+        <div class="begin-left ">
+            <div class="begin-left-border">
+                <div class="begin-left-border-1">中国联通</div>
+                <div class="begin-left-border-1">中国联通</div>
+            </div>
+        </div>
+        <div class="begin-right ">
+            <div id="begin-right-3">
+                <div class="lose" > </div>
+                <div class="lose"> </div>
+                <div class="ok"> </div>
+                <div class="ok"> </div>
+            </div>
+            <div id="begin-right-4">
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="lose"></div>
+                <div class="ok"></div>
+            </div>
+            <div class="begin-right-2">
+                <div class="battery">
+                    <div class="battery-body c" ></div>
+                </div>
+                <div class="battery-header"></div>
+
+            </div>
+        </div><div class="begin-right-1">
+        晚上8:59
+    </div>
+    </div>
+    <!--begin end-->
+    <!--header start-->
+<div id="header">
+    <div id="header-1">
+        发现群
+    </div>
+    <div id="header-2">通知</div>
+    <div id="header-3"><b style="border-bottom: 1px solid crimson;padding-bottom: 8px;">消息</b></div>
+    <div id="header-4">
+        <div id="pinglun">
+            <div id="sanjiao"></div>
+        </div>
+    </div>
+</div>
+
+    <!--search start-->
+    <div id="search">
+        <div id="sousuo">
+            <div id="fangda"></div>
+            <div id="sou">搜索</div>
+        </div>
+    </div>
+
+
+    <!--search end-->
+    <!--text start-->
+    <div id="text">
+
+        <div class=" ceng border">
+            <div id="text-1"style=" border-bottom: none;"></div>
+            <div id="text-2">@我的</div>
+            <div id="text-3"><b style="color:darkgrey;line-height: 80px;font-size: 30px;">&gt;</b></div>
+        </div>
+        <div class=" ceng">
+            <div id="pinglun1"style=" border-bottom: none;"></div>
+            <div id="text-2">评论</div>
+            <div id="text-3"><b style="color:darkgrey;line-height: 80px;font-size: 30px;">&gt;</b></div>
+        </div>
+        <div class=" ceng"><div id="zan"style=" border-bottom: none;"></div>
+            <div id="text-2">赞</div>
+            <div id="text-3"><b style="color:darkgrey;line-height: 80px;font-size: 30px;">&gt;</b></div></div>
+        <div class=" ceng"><div id="email"style=" border-bottom: none;">
+            <div id="quan"></div>
+        </div>
+            <div id="xinwen">
+                <div id="new"class="ceng "style="border-bottom: none">新浪新闻</div>
+                <div id="new2"class="ceng " style="color: grey;border-bottom: none">鹿晗关晓彤被爆亲密同行被...</div>
+            </div>
+            <div id="text-4"><b style="color:darkgrey;line-height: 80px;font-size: 10px;">昨天</b></div></div>
+        <div class="ceng"><div id="xinlang"style=" border-bottom: none;">
+            <div id="quan1"></div>
+        </div>
+            <div id="text-2" >恭喜你！获得1元开会员机会！</div>
+            <div id="text-4"><b style="color:darkgrey;line-height: 80px;font-size: 16px;">6-10</b></div></div>
+        <div class=" ceng"><div id="pay" style="border-bottom: none" ></div>
+            <div id="text-2">欢迎加入微博！</div>
+            <div id="text-4"><b style="color:darkgrey;line-height: 80px;font-size: 16px;">6-16</b></div></div>
+        <div class=" ceng"><div id="pay" style="border-bottom: none" ></div>
+            <div id="text-2">欢迎加入微博！</div>
+            <div id="text-4"><b style="color:darkgrey;line-height: 80px;font-size: 16px;">6-16</b></div></div>
+        <div class=" ceng"><div id="pay" style="border-bottom: none" ></div>
+            <div id="text-2">欢迎加入微博！</div>
+            <div id="text-4"><b style="color:darkgrey;line-height: 80px;font-size: 16px;">6-16</b></div></div>
+
+    </div>
+
+    <!--text end-->
+    <div class="end ">
+        <div id="end">
+            <div id="end-1"onclick="window.location.href='weibo.html'">
+                <div id="end-1-1"></div>
+                <div id="end-1-2"><p>首页</p></div>
+            </div></a>
+            <div id="end-2"onclick="window.location.href='1.html'">
+                <div id="end-2-1">
+                    <div id="xiaoxi">
+                        <div id="6"style="transform: scale(.7);color: whitesmoke;text-align: center">6</div>
+                    </div>
+                </div>
+                <div id="end-2-2"><p>消息</p></div>
+            </div>
+
+            <div id="end-3"onclick="window.location.href='jia.html'">
+
+                <div id="end-3-1">
+                    <div id="end-3-2"></div>
+                </div>
+            </div>
+            <div id="end-4" onclick="window.location.href='2.html'">
+                <div id="end-4-1"></div>
+                <div id="end-4-2"><p>发现</p></div>
+            </div>
+            <div id="end-5" onclick="window.location.href='3.html'">
+                <div id="end-5-1" ></div>
+                <div id="end-5-2"><p>我</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
